@@ -2,10 +2,10 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
+    --cor-de-fundo: #8B008B;
+    --fundo-senha: #DDA0DD;
+    --fundo-texto: #EE82EE;
+    --borda: #EE82EE;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -70,9 +70,9 @@ body {
     font-family: var(--roboto-mono);
     font-size: 28px;
 }
-
 .parametro-senha__titulo {
     font-size: 24px;
+
 }
 
 .parametro-coluna__senha {
@@ -80,7 +80,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
 .parametro-senha {
     width: 50%;
     margin: 0 auto;
@@ -92,20 +91,29 @@ body {
 }
 
 .parametro-senha__botao {
-    background-color: var(--fundo-texto);
+    background-color: var(--cor-de-fundo);
     color: var(--branco);
-    border: 2px solid var(--borda);
+    border: 0px solid var(--borda);
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
+    }
+.parametro-senha__texto {
+    border-top: 2px solid var(--cor-de-fundo);
+    border-bottom: 2px solid var(--cor-de-fundo);
+    padding: 24px;
+    margin: 0px;
+    font-size: 24px;
 }
 
-.parametro-senha__texto {
-    padding: 24px;
-    border-top: 2px solid var(--borda);
-    border-bottom: 2px solid var(--borda);
-    margin: 0;
-    font-size: 24px;
+label{
+    font-sze:20px;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
